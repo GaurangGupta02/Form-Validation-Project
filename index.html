@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="theme-button">
+                    <button type="button" class="btn btn-secondary" id="theme-toggle">Theme</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="myForm">
+                    <h2 class="theme-text">Registration Form</h2>
+                    <div class="form-group">
+                        <label for="fullName" class="theme-text">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control theme-input">
+                        <span id="fullNameError" class="error theme-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="theme-text">Email ID:</label>
+                        <input type="email" id="email" name="email" class="form-control theme-input">
+                        <span id="emailError" class="error theme-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="theme-text">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control theme-input">
+                        <span id="phoneError" class="error theme-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="theme-text">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control theme-input">
+                        <span id="passwordError" class="error theme-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" class="theme-text">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control theme-input">
+                        <span id="confirmPasswordError" class="error theme-text"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
